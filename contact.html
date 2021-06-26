@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refix Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main class="overflow-hidden">
+        <!----------------------------------------- TopBar ------------------------------------->
+        <div class="topBar pt-3 border-bottom font-monospace " id="topBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 pb-lg-auto pb-2 ps-lg-0 ps-5">
+
+                        <span class="topBar-email  d-lg-inline-block d-block">
+                            Ahmed.Makled@live.com
+                        </span>
+                        <span class="topBar-contact  d-lg-inline-block d-block">
+                            +201066181942
+                        </span>
+                        <span class="topBar-work-time  d-lg-inline-block d-block">
+                            MON - SAT: 10:00 - 18:00
+                        </span>
+                    </div>
+                    <div class="col-lg-4 col-12  text-lg-end ps-lg-0 ps-5">
+                        <ul class="list-unstyled">
+                            <li class="topBar-appointment">
+                                <span href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="@mdo">Make an
+                                    appointment</span>
+
+                            </li>
+                        </ul>
+
+                        <div class="modal fade text-dark text-start" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Get an Appointment</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="needs-validation">
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-email" class="col-form-label">Email:</label>
+                                                <input type="text" class="form-control" id="recipient-email" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary Send-message-modal" required>Send
+                                            message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------------------- NavBar ------------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light  pb-lg-0 p-3 " id="navBar">
+            <div class="container">
+                <div class="logo ">
+                    <svg width="100" height="30px" viewBox="0 0 109 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M46.2646 18.4746H43.8525V25H39.3965V6.51562H46.6709C48.863 6.51562 50.5768 7.00228 51.8125 7.97559C53.0482 8.94889 53.666 10.3242 53.666 12.1016C53.666 13.388 53.4036 14.4544 52.8789 15.3008C52.3626 16.1471 51.5501 16.8327 50.4414 17.3574L54.3008 24.8096V25H49.5273L46.2646 18.4746ZM43.8525 15.0342H46.6709C47.5173 15.0342 48.152 14.8141 48.5752 14.374C49.0068 13.9255 49.2227 13.3034 49.2227 12.5078C49.2227 11.7122 49.0068 11.0902 48.5752 10.6416C48.1436 10.1846 47.5088 9.95605 46.6709 9.95605H43.8525V15.0342ZM67.8213 17.167H60.8135V21.5723H69.0908V25H56.3574V6.51562H69.1162V9.95605H60.8135V13.8535H67.8213V17.167ZM82.5479 17.6367H75.3623V25H70.9062V6.51562H83.2715V9.95605H75.3623V14.209H82.5479V17.6367ZM89.873 25H85.4297V6.51562H89.873V25ZM100.093 12.6602L103.114 6.51562H108.205L103.038 15.6816L108.345 25H103.203L100.093 18.7412L96.9824 25H91.8535L97.1475 15.6816L91.9932 6.51562H97.0713L100.093 12.6602Z"
+                            fill="#37447E" />
+                        <rect width="30" height="28" fill="url(#pattern0)" />
+
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0"
+                                    transform="translate(0 -0.0357143) scale(0.015625 0.0167411)" />
+                            </pattern>
+                            <image id="image0" width="64" height="64"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 text-lg-start text-center   ">
+                        <li class="nav-item">
+                            <a class="nav-link   p-3 font-monospace fs-6 hvr-underline-from-center " aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  p-3 font-monospace fs-6 hvr-underline-from-center"
+                                href="index.html">About
+                                US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle  p-3 font-monospace fs-6 hvr-underline-from-center toggel-services"
+                                href="services.html" id="navbarDropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-dark  font-monospace fs-6" href="services.html">Cooling
+                                        Services</a>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark  font-monospace fs-6" href="services.html">Heating
+                                        Services</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark  font-monospace fs-6" href="services.html">Other
+                                        Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  p-3 font-monospace fs-6 hvr-underline-from-center"
+                                href="index.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active p-3 font-monospace fs-6 hvr-underline-from-center"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!----------------------------------------- Contact us------------------------------------->
+
+        <section class="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center p-5">
+
+                        <h3>Contact Us</h3>
+                        <span class="divider-icon d-inline-block position-relative">
+                            <img src="images/icon-fan.png" class="img-fluid" alt="divider fan-icon">
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-lg-6 col-12 ">
+                        <h3>Get in Touch</h3>
+                        <p>We are available 24/7 by fax, e-mail or by phone. You can also use our quick contact form to
+                            ask a question about our services and projects. </p>
+                        <form id="form-contact">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fs-5">Name</label>
+                                <input type="text" class="form-control w-lg-75 w-100" id="name" required>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fs-5">Email</label>
+                                <input type="email" class="form-control w-lg-75 w-100" id="email" required>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fs-5">Phone</label>
+                                <input type="phone" class="form-control w-lg-75 w-100" id="phone">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label fs-5" required>Subject</label>
+                                <textarea class="form-control w-lg-75 w-100" id="textarea" rows="3"></textarea>
+
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary btnSendMessage ">Send
+                                Message</button>
+                        </form>
+
+                    </div>
+                    <div class="col-lg-6 col-12 ">
+
+                        <div class="aside-contact p-3">
+
+                            <!--Get social-->
+                            <div class="social-media ">
+                                <h4 class="fw-bold  font-monospace  pb-lg-2 pb-0 mt-lg-1 mt-5">Get Soical</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item  mt-3"><a href="#" class="facebook"></a></li>
+                                    <li class="list-inline-item  mt-3"><a href="#" class="twitter"></a></li>
+                                    <li class="list-inline-item  mt-3"><a href="#" class="instgram"></a></li>
+                                    <li class="list-inline-item  mt-3"><a href="#" class="linkedin"></a></li>
+
+
+                                </ul>
+
+                            </div>
+                            <hr>
+
+                            <div class="Get-phone ">
+
+                                <ul class="list-inline">
+
+                                    <li class="list-inline-item  mt-3">
+                                        <h4 class="fw-bold  font-monospace  pb-3">PHONE</h4>
+
+
+                                        <a href="#" class="topBar-contact fs-4 fw-bold"><span>+201066181942</span></a>
+                                    </li>
+                                    <hr>
+
+
+                                    <li class="list-inline-item  mt-3">
+                                        <h4 class="fw-bold  font-monospace  pb-3">Email</h4>
+
+                                        <a href="#" class="topBar-email fs-4 fw-bold"><span>Ahmed.Makled@live.com
+                                            </span></a>
+                                    </li>
+                                    <hr>
+
+
+                                    <li class="list-inline-item  mt-3">
+                                        <h4 class="fw-bold  font-monospace  pb-3">Adress</h4>
+
+                                        <a href="#" class="topBar-adress fs-4 fw-bold"><span>13str,
+                                                Mansoura, VA, 2230</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!----------------------------------------- Footer------------------------------------->
+        <footer>
+            <div class="container">
+                <div class="row refix-footer   ">
+                    <div class="col-lg-4 col-12">
+                        <img src="images/logo.png" class="img-fluid" alt="logo refix shop ">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis aut explicabo, totam
+                            dolore dicta
+                            asperiores vel tempore inventore beatae necessitatibus aliquam ab soluta voluptatum ipsum
+                            vitae dolores
+                            autem quae commodi!</p>
+                        <div class="social-media">
+                            <ul class="list-inline">
+                                <li class="list-inline-item "><a href="#" class="facebook"></a></li>
+                                <li class="list-inline-item "><a href="#" class="twitter"></a></li>
+                                <li class="list-inline-item "><a href="#" class="instgram"></a></li>
+                                <li class="list-inline-item "><a href="#" class="linkedin"></a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-12 mt-4">
+                        <h5 class="position-relative fw-bold pb-3 fs-2">Services</h5>
+                        <ul class="list-unstyled arrow">
+                            <li class="pb-2"><a href="#">Air Conditioner Repair</a></li>
+                            <li class="pb-2"><a href="#">A/C Installation</a></li>
+                            <li class="pb-2"><a href="#">Furnace Installation</a></li>
+                            <li class="pb-2"><a href="#">Commercial Refrigeration</a></li>
+                            <li class="pb-2"><a href="#">Ductwork Installation</a></li>
+                            <li class="pb-2"><a href="#">Commercial HVAC service</a></li>
+                            <li class="pb-2"><a href="#">HVAC Installation</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 col-12 mt-4">
+                        <h5 class="position-relative fw-bold pb-3 fs-2">Recent Posts </h5>
+                        <ul class="list-unstyled arrow">
+                            <li class="pb-1">
+                                <a href="#">Just another amazing blog post</a>
+                                <span>June 21, 2021</span>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#">Just another amazing blog post</a>
+                                <span>June 21, 2021</span>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#">Just another amazing blog post</a>
+                                <span>June 21, 2021</span>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#">Just another amazing blog post</a>
+                                <span>June 21, 2021</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-flid">
+                <div class="row ">
+                    <div class="col-12 Copyright  text-center p-3 text-uppercase">
+                        <span class="font-lg-monospace">© 2021. Developed BY <a class="fs-lg-6"
+                                href="http://makled.byethost17.com/" target="_blank">Ahmed
+                                Makled</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
